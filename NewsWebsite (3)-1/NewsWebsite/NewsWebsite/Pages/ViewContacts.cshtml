@@ -1,0 +1,77 @@
+﻿@page
+@model NewsWebsite.Pages.ViewContactsModel
+
+@{
+    Layout = "Admin_Layout";
+    ViewData["Title"] = "ViewContacts";
+
+}
+
+<table id="customers">
+
+    <tr>
+        <th>CONTACTID</th>
+        <th>PERSONID</th>
+        <th>FIRSTNAME</th>
+        <th>EMAIL</th>
+        <th>SUBJECT</th>
+
+        
+        @*<th>DELETE</th>*@
+        @*<th>DATE</th>
+        <th>DETAILS</th>
+        <th>Edit</th*@>
+
+
+        @*<th>DETAILS</th>
+        <th>Edit</th>
+        <th>DElete</th>*@
+    </tr>
+
+
+
+    @foreach (var r in Model.contacts)
+    {
+
+
+        <tr>
+            <td>@r.ContactID</td>
+            <td>@r.PersonID</td>
+            <td>@r.FirstName</td>
+
+            <td>@r.Email</td>
+            <td>@r.Subject</td>
+            
+          
+
+            @*<td>
+
+                    <a asp-page="Edit" asp-route-ID="@cont.ID">Edit</a>
+                </td>
+                <td>
+                    <a asp-page="Details" asp-route-ID="@cont.ID">Details</a>
+
+                </td>
+                <td>
+                    <a asp-page="Delete" asp-route-ID="@cont.ID">Delete</a>
+
+
+                </td>*@
+
+            @*<td>
+
+                    <button><a asp-page="Edit" asp-route-ID="@p.ID">Edit</a></button>
+                </td>
+                <td>
+                    <button><a asp-page="Details" asp-route-ID="@p.ID">Details</a></button>
+                </td>*@
+            <td>
+                @*<button><a asp-page="Delete" asp-route-ID="@r.ReviewID">DELETE</a></button>*@
+            </td>
+        </tr>
+
+
+    }
+</table>
+
+

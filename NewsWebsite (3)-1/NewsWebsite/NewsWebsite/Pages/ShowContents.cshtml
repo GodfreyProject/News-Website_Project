@@ -1,0 +1,74 @@
+﻿@page
+@model NewsWebsite.Pages.ShowContentsModel
+@{
+    Layout = "Admin_Layout";
+    ViewData["Title"] = "ShowContents";
+
+}
+ 
+<table id="customers">
+
+    <tr>
+        <th>ARTICLE_ID</th>
+        <th>NEWSTYPE</th>
+        <th>NEWS-IMAGE</th>
+        <th>TITLE</th>
+        <th>DESCRIPTION</th>
+        <th>AUTHOR</th>
+        <th>DATE</th>
+        <th>DETAILS</th>
+        <th>Edit</th>
+        <th>DElete</th>
+
+        @*<th>DETAILS</th>
+        <th>Edit</th>
+        <th>DElete</th>*@
+    </tr>
+
+
+
+    @foreach (News_ClassLibrary.Logic.Classes.NewsArticle g in Model.ShowGames)
+    {
+
+
+<tr>
+    <td>@g.NewsID</td>
+    <td>@g.NewsType</td>
+    <td> <img class="content_img" src="~/photo/@g.Img" alt="Image" /></td>
+
+    <td>@g.Title</td>
+    <td>@g.Description</td>
+    <td>@g.Author</td>
+    <td>@g.Date</td>
+    @*<td>
+
+            <a asp-page="Edit" asp-route-ID="@cont.ID">Edit</a>
+        </td>
+        <td>
+            <a asp-page="Details" asp-route-ID="@cont.ID">Details</a>
+
+        </td>
+        <td>
+            <a asp-page="Delete" asp-route-ID="@cont.ID">Delete</a>
+
+
+        </td>*@
+
+    <td>
+
+        <button><a asp-page="Edit" asp-route-ID="@g.NewsID">Edit</a></button>
+    </td>
+    <td>
+        <button><a asp-page="Details" asp-route-ID="@g.NewsID">Details</a></button>
+</td>
+    <td>
+        <button><a asp-page="Delete" asp-route-ID="@g.NewsID">Delete</a></button>
+</td>
+</tr>
+
+
+    }
+</table>
+
+
+

@@ -1,0 +1,8 @@
+C:\Users\vera2\source\repos\NewsWebsite\.vs\NewsWebsite\v16\lut\0\b\News_ClassLibrary\Debug\netcoreapp3.1\News_ClassLibrary.deps.json
+C:\Users\vera2\source\repos\NewsWebsite\.vs\NewsWebsite\v16\lut\0\b\News_ClassLibrary\Debug\netcoreapp3.1\News_ClassLibrary.dll
+C:\Users\vera2\source\repos\NewsWebsite\.vs\NewsWebsite\v16\lut\0\i\News_ClassLibrary\Debug\netcoreapp3.1\News_ClassLibrary.csproj.AssemblyReference.cache
+C:\Users\vera2\source\repos\NewsWebsite\.vs\NewsWebsite\v16\lut\0\i\News_ClassLibrary\Debug\netcoreapp3.1\News_ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vera2\source\repos\NewsWebsite\.vs\NewsWebsite\v16\lut\0\i\News_ClassLibrary\Debug\netcoreapp3.1\News_ClassLibrary.AssemblyInfoInputs.cache
+C:\Users\vera2\source\repos\NewsWebsite\.vs\NewsWebsite\v16\lut\0\i\News_ClassLibrary\Debug\netcoreapp3.1\News_ClassLibrary.AssemblyInfo.cs
+C:\Users\vera2\source\repos\NewsWebsite\.vs\NewsWebsite\v16\lut\0\i\News_ClassLibrary\Debug\netcoreapp3.1\News_ClassLibrary.csproj.CopyComplete
+C:\Users\vera2\source\repos\NewsWebsite\.vs\NewsWebsite\v16\lut\0\i\News_ClassLibrary\Debug\netcoreapp3.1\News_ClassLibrary.dll

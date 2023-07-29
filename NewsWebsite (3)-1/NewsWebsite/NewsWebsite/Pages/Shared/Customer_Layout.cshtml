@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewData["Title"] - WebApplication2</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/subscribe.css" />
+    <link rel="stylesheet" href="~/css/dropdown.css" />
+    @*//<link rel="stylesheet" href="~/js/site.js" />*@
+</head>
+<body>
+
+    <header>
+        <div class="website-header">
+            <img src="~/images/logo.png">
+            <h1>NEWS TODAY</h1>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fas fa-rss"></i>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md ">
+            <!-- Brand -->
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+             @*Navbar links*@ 
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="CustomerHome">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Politics">POLITICS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="International">INTERNATIONAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Business">BUSINESS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Regional">REGIONAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Sport">SPORT</a>
+                    </li>
+                    @*<li class="nav-item">
+                        <a class="nav-link" href="CustomerPorfile">PROFILE</a>
+                    </li>*@
+                    @*<li class="nav-item">
+                        <a class="nav-link" href="/CustomerContact">CONTACT</a>
+
+                    </li>*@
+                    @*<li class="nav-item">
+                        <a class="nav-link" href="PersonalReviews">NewsARTICLES</a>
+                    </li>*@
+                    <li class="nav-item">
+                    <li class="menu">
+                        <a class="nav-link" href="#">CUSTOMER'SERVICES</a>
+                        <ul class="ani-menu">
+                            <li><a href="/CustomerContact">CONTACT</a></li>
+                            <li><a href="CustomerPorfile">PROFILE</a></li>
+                            <li><a href="CustomerReview">ADDREVIEW</a></li>
+                            <li><a href="ViewComments">VIEWREVIEWS</a></li>
+                            <li><a href="Subscription">SUBSCRIBE</a></li>
+                            <li><a href="SubscriptionDetails">VIEWSUBSCRIPTION</a></li>
+                            <li><a href="PersonalReviews">NewsARTICLES</a></li>
+                        </ul>
+                    </li>
+                    @*</li>*@
+                    @*<li class="menu">
+            <a href="#">SUBSCRIPTION</a>
+            <ul class="ani-menu">
+                <li><a href="#">SUBSCRIBE</a></li>
+                <li><a href="#">VIEWSUBSCRIPTION</a></li>
+            </ul>
+        </li>*@
+                    <li class="nav-item" style="float:right">
+                        <a class="nav-link" asp-page="/Index" asp-page-handler="Logout">LOGOUT</a>
+                    </li>
+
+                    @*<li class="nav-item">
+
+            <a class="nav-link" href="CustomerReview">ADDREVIEW</a>
+            <a class="nav-link" href="ViewComments">VIEWREVIEWS</a>
+
+
+        </li>*@
+                    @*<li class="nav-item">
+            <a class="nav-link" href="Subscription">SUBSCRIBE</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="SubscriptionDetails">Subscriptions</a>
+        </li>*@
+                    @*</ul>*@
+                    @*<a class="nav-item" href="CustomerReview">REVIEW</a>
+           <a class="nav-item" href="ViewComments">ViewFeedBack</a>
+        <a  class="nav-item"href="Subscription">SUBSCRIBE</a>
+         <a  class="nav-item"href=" SubscriptionDetails">Personal-Subscriptions</a>*@
+
+
+
+
+
+
+                    @*<li class="nav-item">
+            <a class="nav-link" href="/CustomerContact">CONTACT</a>
+
+        </li>*@
+
+                    @*<li class="nav-item" style="float:right">
+            <a class="nav-link" asp-page="/Index" asp-page-handler="Logout">LOGOUT</a>
+        </li>*@
+                </ul>
+            </div>
+
+         </nav>
+        @*<nav>*@
+         <ul>
+                    @*<li class="menu"><a href="#">Home Page</a></li>
+                    <li class="menu"><a href="#">SPORT</a></li>
+                    <li class="menu"><a href="#">REGIONAL</a></li>
+                    <li class="menu"><a href="#">INTERNATIONAL</a></li>*@
+                    
+                    @*</li>
+                    <li class="menu"><a href="#">NEWSARTICLE</a></li>
+                    <li class="menu"><a href="#">PROFILE</a></li>
+                    <li class="menu"><a href="#">CONTACT</a></li>
+                    <li class="menu"><a href="#">LOGOUT</a></li>*@
+                @*<li><a class="menu" asp-page="/Index" asp-page-handler="Logout">LOGOUT</a></li>*@
+                </ul>
+            @*</nav>*@
+            <div class="breaking-news-section">
+                <span id="btext">Breaking News</span>
+                <marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+                    <a href="#" class="breaking-news">
+                        <p class="bntime">26 April 2022</p>
+                        Congress under pressure to reach a deal
+                    </a>
+                    <a href="#" class="breaking-news"><p class="bntime">26 April 2022</p>Powerful laser beam is helping track the moon</a>
+                    <a href="#" class="breaking-news"><p class="bntime">26 April 2022</p>Snowstorm buries Pacific Northwest, with more on the way</a>
+                </marquee>
+            </div>
+        </header>
+          <main>
+        @*<section class="more-news">
+            <div class="news-section">*@
+                @*<article class="world">
+            <h2>WORLD</h2>
+            <img src="images/world1.jpg">
+            <h3>Syria crisis: Obama rejects US military intervention</h3>
+            <p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type to visualize what the actual copy might look like if it were real content. If you want to read, I might suggest a good […]</p>
+            <p>AUTHOR: JENNY ADAMS</p>
+            <p>DATE: 13/11/21</p>*@
+                @*</article>*@
+                @*<article class="sport">
+                <h2>SPORT</h2>
+                <img src="images/sport1.jpg">
+                <h3>Lisboa Triathlon 2021</h3>
+                <p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type to visualize what the actual copy might look like if it were real content. If you want to read, I might suggest a good […]</p>
+                <p>AUTHOR: DANIEL SMITH</p>
+                <p>DATE: 13/09/21</p>
+            </article>*@
+                @*</div>*@
+                @*<aside>
+                <h4>RECENT</h4>
+                <div class="recent-news">
+                    <img src="images/article1.jpg">
+                    <p>2021 Mercedes-AMG C63 Coupe Makes its Debut</p>
+                </div>
+                <div class="recent-news">
+                    <img src="images/aside2.jpg">
+                    <p>2021 Mercedes-AMG C63 Coupe Makes its Debut</p>
+                </div>
+                <div class="recent-news">
+                    <img src="images/aside3.jpg">
+                    <p>2021 Mercedes-AMG C63 Coupe Makes its Debut</p>
+                </div>
+                <div class="recent-news">
+                    <img src="images/aside4.jpg">
+                    <p>2021 Mercedes-AMG C63 Coupe Makes its Debut</p>
+                </div>
+                <div class="recent-news">
+                    <img src="images/aside5.jpg">
+                    <p>2021 Mercedes-AMG C63 Coupe Makes its Debut</p>
+                </div>
+            </aside>*@
+                @*<div class="news-section">
+            <article class="world">
+                <h2>WORLD</h2>
+                <img src="images/world1.jpg">
+                <h3>Syria crisis: Obama rejects US military intervention</h3>
+                <p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type to visualize what the actual copy might look like if it were real content. If you want to read, I might suggest a good […]</p>
+                <p>AUTHOR: JENNY ADAMS</p>
+                <p>DATE: 13/11/21</p>
+            </article>
+            <article class="sport">
+                <h2>SPORT</h2>
+                <img src="images/sport1.jpg">
+                <h3>Lisboa Triathlon 2021</h3>
+                <p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type to visualize what the actual copy might look like if it were real content. If you want to read, I might suggest a good […]</p>
+                <p>AUTHOR: DANIEL SMITH</p>
+                <p>DATE: 13/09/21</p>
+            </article>
+
+            <article class="sport">
+                <h2>SPORT</h2>
+                <img src="images/sport1.jpg">
+                <h3>Lisboa Triathlon 2021</h3>
+                <p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type to visualize what the actual copy might look like if it were real content. If you want to read, I might suggest a good […]</p>
+                <p>AUTHOR: DANIEL SMITH</p>
+                <p>DATE: 13/09/21</p>
+            </article>
+            <article class="sport">
+                <h2>SPORT</h2>
+                <img src="images/s.jpg">
+                <h3>Lisboa Triathlon 2021</h3>
+                <p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type to visualize what the actual copy might look like if it were real content. If you want to read, I might suggest a good […]</p>
+                <p>AUTHOR: DANIEL SMITH</p>
+                <p>DATE: 13/09/21</p>
+            </article>*@
+                @*<div class="TheBody">
+            <div class="header" style=" position: fixed; z-index: 999; ">
+                <nav>
+                    <a class="a nav-link text-dark" asp-area="" asp-page="/CustomerHome">Home</a>
+                    <a class="a nav-link text-dark" asp-area="" asp-page="/Home">Breaking-News</a>
+                    <a class="a nav-link text-dark" asp-area="" asp-page="/CustomerPorfile">Profile</a>
+                    <a class="a nav-link text-dark" asp-area="" asp-page="/Sport">Sport-News</a>
+                    <a class="a nav-link text-dark" asp-area="" asp-page="/CustomerAddPorductsToReservation">Add products to reservation</a>
+                    <a class="a nav-link text-dark" asp-area="" asp-page="/Reservations">Reservations</a>
+
+                    <a class="LoginButton nav-link text-dark" asp-area="" asp-page-handler="Logout" asp-page="/Index">Logout</a>
+                </nav>
+            </div>*@
+
+                <div class="main_content">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    @RenderBody()
+                </div>
+                @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+            <script src="~/js/site.js" asp-append-version="true"></script>
+            <div class="footer" style=" position: fixed;">
+                <a class="a nav-link text-dark" asp-area="" asp-page="/CustomerContectPage">Contect us</a>
+            </div>*@
+            @*</div>*@
+            @RenderSection("Scripts", required: false)
+        @*</section>*@
+    </main>
+
+    
+    @*</div>*@
+</body>
+</html>

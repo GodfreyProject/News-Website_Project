@@ -1,0 +1,68 @@
+﻿@page
+@model NewsWebsite.Pages.CustomerReviewModel
+@{
+    Layout = "Customer_Layout";
+    ViewData["Title"] = "CustomerReview";
+}
+
+<form method="post" enctype="multipart/form-data">
+    <div class="add_game_form">
+        <h1>Add Comment for Customer</h1>
+        <hr>
+        <div class="main_content">
+            @*<p class="TextBox">*@
+
+
+            <label asp-for="customer.ID"><b>PersonID:</b></label>
+            <span asp-validation-for="customer.ID"></span>
+            <input type="text" asp-for="customer.ID" placeholder="Enter Name">
+
+            <label asp-for="customer.Username"><b>UserName:</b></label>
+            <span asp-validation-for="customer.Username"></span><br>
+            <input type="text" asp-for="customer.Username" placeholder="Enter Username"><br><br>
+            @*<label asp-for="Search"><b>Search:</b></label>
+        <span asp-validation-for="Search"></span><br>
+        <input type="text" asp-for="Search" placeholder="Enter Username"><br><br>
+        <br />*@
+
+
+
+            <label asp-for="NewsID"><b>NewsID:</b></label>
+            <span asp-validation-for="NewsID"></span>
+            <input asp-for="NewsID" type="text" placeholder="Enter NewsId">
+            <br />
+            <label asp-for="NewsType"><b>NewsType:</b></label>
+            <select typeof="text" asp-for="NewsType" id="cars">
+                <option value="SPORT">SPORT</option>
+                <option value="REGIONAL-NEWS">REGIONAL-NEWS</option>
+                <option value="POLITICS">POLITICS</option>
+                <option value="WORLD">WORLD</option>
+                <option value="INTERNATIONAL-NEWS">INTERNATIONAL-NEWS</option>
+                <option value="BUSINESS">BUSINESS</option>
+            </select>
+            <br />
+            @*<label asp-for="article.NewsType"><b>NewsType:</b></label>
+        <span asp-validation-for="article.NewsType"></span>
+        <input asp-for="article.NewsType" placeholder="Enter NewsType">*@
+
+            <label asp-for="Message"><b>Message:</b></label>
+            <span asp-validation-for="Message"></span><br>
+            <textarea asp-for="Message" placeholder="Write a description" rows="10" cols="100"></textarea><br>
+
+            <label asp-for="Date"><b>Release date:</b></label>
+            <span asp-validation-for="Date"></span><br />
+            <input asp-for="Date" type="date"><br /><br />
+
+            <hr>
+
+            <button type="submit" class="add_game_btn">Add</button>
+            <a asp-page="/ViewComments">Back To List</a>
+
+        </div>
+        </div>
+
+</form>
+
+
+            
+

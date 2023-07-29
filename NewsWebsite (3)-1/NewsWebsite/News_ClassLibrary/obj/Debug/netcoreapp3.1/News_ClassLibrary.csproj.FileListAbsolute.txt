@@ -1,0 +1,10 @@
+C:\Users\vera2\source\repos\NewsWebsite\News_ClassLibrary\bin\Debug\netcoreapp3.1\News_ClassLibrary.deps.json
+C:\Users\vera2\source\repos\NewsWebsite\News_ClassLibrary\bin\Debug\netcoreapp3.1\News_ClassLibrary.dll
+C:\Users\vera2\source\repos\NewsWebsite\News_ClassLibrary\bin\Debug\netcoreapp3.1\News_ClassLibrary.pdb
+C:\Users\vera2\source\repos\NewsWebsite\News_ClassLibrary\obj\Debug\netcoreapp3.1\News_ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vera2\source\repos\NewsWebsite\News_ClassLibrary\obj\Debug\netcoreapp3.1\News_ClassLibrary.AssemblyInfoInputs.cache
+C:\Users\vera2\source\repos\NewsWebsite\News_ClassLibrary\obj\Debug\netcoreapp3.1\News_ClassLibrary.AssemblyInfo.cs
+C:\Users\vera2\source\repos\NewsWebsite\News_ClassLibrary\obj\Debug\netcoreapp3.1\News_ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\vera2\source\repos\NewsWebsite\News_ClassLibrary\obj\Debug\netcoreapp3.1\News_ClassLibrary.dll
+C:\Users\vera2\source\repos\NewsWebsite\News_ClassLibrary\obj\Debug\netcoreapp3.1\News_ClassLibrary.pdb
+C:\Users\vera2\source\repos\NewsWebsite\News_ClassLibrary\obj\Debug\netcoreapp3.1\News_ClassLibrary.csproj.AssemblyReference.cache

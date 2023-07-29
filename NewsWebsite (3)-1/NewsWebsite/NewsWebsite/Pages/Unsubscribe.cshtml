@@ -1,0 +1,16 @@
+﻿@page "{ID}:int"
+@model NewsWebsite.Pages.UnsubscribeModel
+@{
+    Layout = "Customer_Layout";
+    ViewData["Title"] = "ViewComments";
+}
+
+<h1>UnSubscribe From Basic Plan</h1>
+<h1> @ViewData["Message"]</h1>
+<h4>Are You Sure You want to UnSubscribe From Basic Plan with Specified FirstName!!<b>@Model.customer.FirstName</b></h4>
+    @*@Html.DisplayFor(model => model.*@
+
+<form method="post">
+    <input type="submit" value="Delete" />
+    <a asp-page="SubscriptionDetails">BACK To Basic-Subscription</a>
+</form>

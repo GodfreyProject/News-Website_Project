@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewData["Title"] - WebApplication2</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    @*<link rel="stylesheet" href="~/css/style.css" />*@
+</head>
+<body>
+    <div class="TheBody">
+        <div class="header" style="top: 0px; position: fixed;">
+            <nav>
+                <a class="a nav-link text-dark" asp-area="" asp-page="/AdminHome">Home</a>
+                <a class="a nav-link text-dark" asp-area="" asp-page="/AdminProfile">Profile</a>
+                <a class="a nav-link text-dark" asp-area="" asp-page="/AddContent">AddContent</a>
+                <a class="a nav-link text-dark" asp-area="" asp-page="/ShowContents">AllContents</a>
+                <a class="a nav-link text-dark" asp-area="" asp-page="/PersonInformations">PersonInfos</a>
+                <a class="a nav-link text-dark" asp-area="" asp-page="/CustomerComments">Customer-Reviews</a>
+                <a class="a nav-link text-dark" asp-area="" asp-page="/ViewContacts">Customer-Contacts</a>
+                <a class="LoginButton nav-link text-dark" asp-area="" asp-page-handler="Logout" asp-page="/Index">Logout</a>
+            </nav>
+        </div>
+
+        <div class="main_content">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            @RenderBody()
+        </div>
+
+        @*<div class="footer" style="bottom: 0px; position:fixed">
+            <a class="a nav-link text-dark" asp-area="" asp-page="/EmployeeContectPage">Contect us</a>
+        </div>*@
+    </div>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

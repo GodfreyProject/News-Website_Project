@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Presentation\Forms\AddComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\ADDContents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\AdminChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\AdminDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\AdminProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\AdminSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\AllComments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\AllPersonsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\ALL_CustomerComments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\BasicSubscription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\ContactForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\CreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\CustomerDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\CustomerProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\CustomerSearchContents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\CustomerSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\CustomerSubscribe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\PremiumSubscription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\Forms\ShowAllContents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentation\ViewAllSubscribers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

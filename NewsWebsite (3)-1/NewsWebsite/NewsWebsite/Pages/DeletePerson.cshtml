@@ -1,0 +1,16 @@
+﻿@page  "{ID}:int"
+@model NewsWebsite.Pages.DeletePersonModel
+@{
+    Layout = "Admin_Layout";
+    ViewData["Title"] = "DeletePerson";
+}
+
+
+<h1>Delete Content Article</h1>
+<h1> @ViewData["Message"]</h1>
+<h4>Are You Sure You want to Delete This Article with Specified ID!!<b>@Html.DisplayFor(model => model.DisplayRecords.ID)</b></h4>
+
+<form method="post">
+    <input type="submit" value="Delete" />
+    <a asp-page="PersonInformations">BACK To List</a>
+</form>

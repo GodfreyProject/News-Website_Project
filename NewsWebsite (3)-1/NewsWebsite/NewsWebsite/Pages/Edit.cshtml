@@ -1,0 +1,57 @@
+﻿@page "{ID}:int"
+@model WAD_ASSIGNMENT.Pages.EditModel
+@{
+    Layout = "Admin_Layout";
+    ViewData["Title"] = "Edit";
+}
+
+<form method="post" enctype="multipart/form-data">
+    <div class="add_game_form">
+        <h1>Add Content</h1>
+
+        <h1><p>@ViewData["Message"]</p></h1>
+        <label asp-for="NewsID"><b>NewID:</b></label>
+        <span asp-validation-for="NewsID"></span>
+        <input readonly asp-for="NewsID" type="text" placeholder="Enter NewsID">
+
+        <label asp-for="Upload"><b>Image:</b></label>
+        <span asp-validation-for="Upload"></span><br>
+        <input type="file" class=".new_releases_img" asp-for="Upload" placeholder="Upload image"><br><br>
+        <label asp-for="Title"><b>Title:</b></label>
+        <span asp-validation-for="Title"></span>
+        <input asp-for="Title" type="text" placeholder="Enter Developer">
+        <hr>
+        <label asp-for="Description"><b>Description:</b></label>
+        <span asp-validation-for="Description"></span>
+        <input asp-for="Description" type="text" placeholder="Enter Developer">
+        <hr>
+        <label asp-for="NewsType"><b>NewsType:</b></label>
+        <span asp-validation-for="NewsType"></span>
+        <input asp-for="NewsType" type="text" placeholder="Enter Developer">
+        <hr>
+        <label asp-for="Author"><b>Author:</b></label>
+        <span asp-validation-for="Author"></span>
+        <input asp-for="Author" type="text" placeholder="Enter Developer">
+        <hr>
+        <label asp-for="Date"><b>Date:</b></label>
+        <span asp-validation-for="Date"></span>
+        <input asp-for="Date" type="date" placeholder="Enter Developer">
+        <hr>
+        @*<label asp-for="article.Comment"><b>Developer:</b></label>
+            <span asp-validation-for=".Comment"></span>
+            <input asp-for="GameCLass.Comment" type="text" placeholder="Enter Developer">*@
+        <hr>
+
+        <button type="submit" value="Edit" class="add_game_btn">Edit</button>
+        <a asp-page="ShowContents">Back To List</a>
+
+    </div>
+
+</form>
+
+@*</tr>
+        </table>-->
+    <input type="submit" value="Edit" />
+    <a asp-page="ShowContents">Back To List</a>*@
+@*// </form>*@
+

@@ -1,0 +1,79 @@
+﻿@page
+@model NewsWebsite.Pages.CustomerCommentsModel
+@{
+}
+@{
+    Layout = "Admin_Layout";
+    ViewData["Title"] = "CustomerComments";
+
+}
+
+<table id="customers">
+
+    <tr>
+        <th>REVIEWID</th>
+        <th>PERSONID</th>
+        <th>USERNAME</th>
+        <th>NEWSID</th>
+        <th>NEWSTYPE</th>
+        <th>MESSAGE</th>
+        <th>DATE</th>
+        @*<th>DELETE</th>*@
+        @*<th>DATE</th>
+            <th>DETAILS</th>
+            <th>Edit</th*@>
+      
+
+        @*<th>DETAILS</th>
+            <th>Edit</th>
+            <th>DElete</th>*@
+    </tr>
+
+
+
+    @foreach (News_ClassLibrary.Logic.Classes.Review r in Model.reviews)
+    {
+
+
+        <tr>
+            <td>@r.ReviewID</td>
+            <td>@r.PersonID</td>
+            <td>@r.Username</td>
+
+            <td>@r.NewsID</td>
+            <td>@r.NewsType</td>
+            <td>@r.Message</td>
+            <td>@r.Date</td>
+            
+            @*<td>
+
+                    <a asp-page="Edit" asp-route-ID="@cont.ID">Edit</a>
+                </td>
+                <td>
+                    <a asp-page="Details" asp-route-ID="@cont.ID">Details</a>
+
+                </td>
+                <td>
+                    <a asp-page="Delete" asp-route-ID="@cont.ID">Delete</a>
+
+
+                </td>*@
+
+            @*<td>
+
+                    <button><a asp-page="Edit" asp-route-ID="@p.ID">Edit</a></button>
+                </td>
+                <td>
+                    <button><a asp-page="Details" asp-route-ID="@p.ID">Details</a></button>
+                </td>*@
+            <td>
+                @*<button><a asp-page="Delete" asp-route-ID="@r.ReviewID">DELETE</a></button>*@
+            </td>
+        </tr>
+
+
+    }
+</table>
+
+
+

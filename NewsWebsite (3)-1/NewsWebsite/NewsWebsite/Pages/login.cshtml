@@ -1,0 +1,43 @@
+﻿@page
+@model SynthesisWebsite.Pages.loginModel
+@{
+  
+    ViewData["Title"] = "Login";
+}
+@section scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<div class="main_content">
+    <div class="login">
+        <form method="post">
+            <h4 class="Title">Login</h4>
+            <p class="TextBox" style="text-align: center"> @ViewData["LoginMessage"]</p>
+            <br />
+            
+            <label asp-for="customer.Username">UserName:</label>
+            <span asp-validation-for="customer.Username"></span>
+            <br />
+            <input asp-for="customer.Username" class="TextBox" />
+            <br />
+
+            <label asp-for="customer.Password">Password:</label>
+            <span asp-validation-for="customer.Password"></span>
+            <br />
+            <input type="password" asp-for="customer.Password" class="TextBox" />
+            <br />
+            <br />
+            <button class="a"> login </button>
+            <br />
+            <br />
+            <a style="text-align: center; background-color: white; " class="a nav-link text-dark" asp-area="" asp-page="/MakeAcount">MakeAcount</a>
+
+            <br />
+            @*<a style="text-align: center; background-color: white; " class="a nav-link text-dark" asp-area="" asp-page="ChangePassword">Forgot-Password</a>*@
+            @*<button class="a" style=" background-color: white; " class="a nav-link text-dark" asp-area="" asp-page="/ChangePassword">Forgot Password</button>*@
+        </form>        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+</div>

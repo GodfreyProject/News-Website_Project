@@ -1,0 +1,55 @@
+﻿@page
+@model NewsWebsite.Pages.AdminProfileModel
+@{
+}
+
+@{
+    Layout = "Admin_Layout";
+    ViewData["Title"] = "AdminProfile";
+}
+
+<div class="main_content">
+    <form method="post" class="login">
+
+        <h4 class="Title">Profile</h4>
+
+        <p class="TextBox" style="text-align: center">    @ViewData["Message"] </p>
+
+        <br />
+        <label asp-for="employee.FirstName">FirstName: </label>
+        <span asp-validation-for="employee.FirstName"></span>
+        <input asp-for="employee.FirstName" class="TextBox" />
+        <br />
+        <label asp-for="employee.LastName">LastName: </label>
+        <span asp-validation-for="employee.LastName"></span>
+        <input asp-for="employee.LastName" class="TextBox" />
+        <br />
+        <label asp-for="employee.Username">UserName: </label>
+        <span asp-validation-for="employee.Username"></span>
+        <input asp-for="employee.Username" class="TextBox" />
+        <br />
+        <label asp-for="employee.Email">Email: </label>
+        <span asp-validation-for="employee.Email"></span>
+        <input asp-for="employee.Email" class="TextBox" />
+        <br />
+        <label asp-for="employee.Zipcode">Zipcode: </label>
+        <span asp-validation-for="employee.Zipcode"></span>
+        <input asp-for="employee.Zipcode" class="TextBox" />
+        <br />
+        <label asp-for="employee.Password">Password: </label>
+        <span asp-validation-for="employee.Password"></span>
+        <input type="password" asp-for="employee.Password" class="TextBox" />
+        <br />
+        <label asp-for="employee.UserRole">User-Role: </label>
+        <span asp-validation-for="employee.UserRole"></span>
+        <input asp-for="employee.UserRole" class="TextBox" />
+        <br />
+
+        <button class="button"> Update Acount </button>
+        <a style="text-align: center; background-color: white; " class="a nav-link text-dark" asp-area="" asp-page="AdminChangePassword">Forgot-Password</a>
+        @*<a style="text-align: center; background-color: white; " class="a nav-link text-dark" asp-area="" asp-page="ChangePassword">Forgot-Password</a>*@
+    </form>        <br />
+    <br />
+    <br />
+    <br />
+</div>

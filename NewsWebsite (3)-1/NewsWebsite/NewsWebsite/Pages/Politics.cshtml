@@ -1,0 +1,169 @@
+﻿@page
+@model NewsWebsite.Pages.PoliticsModel
+
+@{
+    Layout = "Customer_Layout";
+    ViewData["Title"] = "Politics";
+}
+
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    @*<main>
+    <section class="">
+        <div class="news-section">*@
+            <main>
+                <section class="more-news">
+                    <div class="news-section">
+                        @*<article class="world">
+                            <h2>WORLD</h2>
+                            <img src="images/world1.jpg">
+                            <h3>Syria crisis: Obama rejects US military intervention</h3>
+                            <p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type to visualize what the actual copy might look like if it were real content. If you want to read, I might suggest a good […]</p>
+                            <p>AUTHOR: JENNY ADAMS</p>
+                            <p>DATE: 13/11/21</p>
+                        </article>*@
+                        @*<article class="sport">
+                            <h2>SPORT</h2>
+                            <img src="images/sport1.jpg">
+                            <h3>Lisboa Triathlon 2021</h3>
+                            <p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type to visualize what the actual copy might look like if it were real content. If you want to read, I might suggest a good […]</p>
+                            <p>AUTHOR: DANIEL SMITH</p>
+                            <p>DATE: 13/09/21</p>
+                        </article>*@
+
+                        @foreach (News_ClassLibrary.Logic.Classes.NewsArticle cont in Model.articles)
+                        {
+
+                            if (cont.NewsType == "POLITICS")
+
+                            {
+                                <article class="sport">
+
+                                    <h2>@cont.NewsType</h2>
+                                    <p><img id="popular-news img" src="~/photo/@cont.Img" alt="" /></p>
+                                    <h3>@cont.Title</h3>
+                                    <p>@cont.Description</p>
+                                    <p>@cont.NewsType</p>
+                                    <p>@cont.Author</p>
+                                    <p>@cont.Date</p>
+
+
+                                    <a asp-page="Details" asp-route-ID="@cont.NewsID"></a>
+                                </article>
+
+                            }
+                        }
+
+                    </div>
+                    <aside>
+                        <h4>RECENT</h4>
+                        <div class="recent-news">
+                            <img src="images/article1.jpg">
+                            <p>2021 Mercedes-AMG C63 Coupe Makes its Debut</p>
+                        </div>
+                        <div class="recent-news">
+                            <img src="images/aside2.jpg">
+                            <p>2021 Mercedes-AMG C63 Coupe Makes its Debut</p>
+                        </div>
+                        <div class="recent-news">
+                            <img src="images/aside3.jpg">
+                            <p>2021 Mercedes-AMG C63 Coupe Makes its Debut</p>
+                        </div>
+                        <div class="recent-news">
+                            <img src="images/aside4.jpg">
+                            <p>2021 Mercedes-AMG C63 Coupe Makes its Debut</p>
+                        </div>
+                        <div class="recent-news">
+                            <img src="images/aside5.jpg">
+                            <p>2021 Mercedes-AMG C63 Coupe Makes its Debut</p>
+                        </div>
+                    </aside>
+                    @*<div class="news-section">*@
+            @*</main>*@
+         @*</section>*@
+
+    @*</main>*@
+
+    @*<div class="news-section">
+        <article class="world">
+            <h2>WORLD</h2>
+            <img src="images/world1.jpg">
+            <h3>Syria crisis: Obama rejects US military intervention</h3>
+            <p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type to visualize what the actual copy might look like if it were real content. If you want to read, I might suggest a good […]</p>
+            <p>AUTHOR: JENNY ADAMS</p>
+            <p>DATE: 13/11/21</p>
+        </article>
+        <article class="sport">
+            <h2>SPORT</h2>
+            <img src="images/sport1.jpg">
+            <h3>Lisboa Triathlon 2021</h3>
+            <p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type to visualize what the actual copy might look like if it were real content. If you want to read, I might suggest a good […]</p>
+            <p>AUTHOR: DANIEL SMITH</p>
+            <p>DATE: 13/09/21</p>
+        </article>*@
+
+        @*<article class="sport">
+            <h2>SPORT</h2>
+            <img src="images/sport1.jpg">
+            <h3>Lisboa Triathlon 2021</h3>
+            <p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type to visualize what the actual copy might look like if it were real content. If you want to read, I might suggest a good […]</p>
+            <p>AUTHOR: DANIEL SMITH</p>
+            <p>DATE: 13/09/21</p>
+        </article>
+        <article class="sport">
+            <h2>SPORT</h2>
+            <img src="images/s.jpg">
+            <h3>Lisboa Triathlon 2021</h3>
+            <p>This is some dummy copy. You’re not really supposed to read this dummy copy, it is just a place holder for people who need some type to visualize what the actual copy might look like if it were real content. If you want to read, I might suggest a good […]</p>
+            <p>AUTHOR: DANIEL SMITH</p>
+            <p>DATE: 13/09/21</p>
+        </article>*@
+    @*<div class="TheBody">
+        <div class="header" style=" position: fixed; z-index: 999; ">
+            <nav>
+                <a class="a nav-link text-dark" asp-area="" asp-page="/CustomerHome">Home</a>
+                <a class="a nav-link text-dark" asp-area="" asp-page="/Home">Breaking-News</a>
+                <a class="a nav-link text-dark" asp-area="" asp-page="/CustomerPorfile">Profile</a>
+                <a class="a nav-link text-dark" asp-area="" asp-page="/Sport">Sport-News</a>
+                <a class="a nav-link text-dark" asp-area="" asp-page="/CustomerAddPorductsToReservation">Add products to reservation</a>
+                <a class="a nav-link text-dark" asp-area="" asp-page="/Reservations">Reservations</a>
+
+                <a class="LoginButton nav-link text-dark" asp-area="" asp-page-handler="Logout" asp-page="/Index">Logout</a>
+            </nav>*@
+
+    @*@foreach (News_ClassLibrary.Logic.Classes.NewsArticle cont in Model.articles)
+        {
+
+            if (cont.NewsType == "POLITICS")
+
+            {
+                <article class="sport">
+
+                    <h2>@cont.NewsType</h2>
+                    <p><img id="popular-news img" src="~/photo/@cont.Img" alt="" /></p>
+                    <h3>@cont.Title</h3>
+                    <p>@cont.Description</p>
+                    <p>@cont.NewsType</p>
+                    <p>@cont.Author</p>
+                    <p>@cont.Date</p>
+
+
+                    <a asp-page="Details" asp-route-ID="@cont.NewsID"></a>
+                            </article>
+
+                        }*@
+    @*}*@
+
+
+    </section>
+        </main>
+
+
+</body>
+</html>

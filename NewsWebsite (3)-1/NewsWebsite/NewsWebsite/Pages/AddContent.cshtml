@@ -1,0 +1,60 @@
+﻿@page
+@model WAD_ASSIGNMENT.Pages.AddContentModel
+@{
+
+    Layout = "Admin_Layout";
+    ViewData["Title"] = "AddContent";
+}
+
+
+@*
+
+
+<!--<-->@*form method="post" enctype="multipart/form-data">*@
+
+    <form method="post" enctype="multipart/form-data">
+        <div class="add_game_form">
+            <h1>Add Content</h1>
+            <h1>@ViewData["Msg"]</h1>
+
+            <label asp-for="Upload"><b>Image:</b></label>
+            <span asp-validation-for="Upload"></span><br>
+            <input type="file" class=".new_releases_img" asp-for="Upload" placeholder="Upload image"><br><br>
+            <label asp-for="article.Title"><b>Title:</b></label>
+            <span asp-validation-for="article.Title"></span>
+            <input asp-for="article.Title" type="text" placeholder="Enter Developer">
+            <hr>
+            <label asp-for="article.Description"><b>Description:</b></label>
+            <span asp-validation-for="article.Description"></span>
+            <input asp-for="article.Description" type="text" placeholder="Enter Developer">
+            <hr>
+            <label asp-for="article.NewsType"><b>NewsType:</b></label>
+            <span asp-validation-for="article.NewsType"></span>
+            @*<input asp-for="article.NewsType" type="text" placeholder="Enter Developer">*@
+            <select typeof="text" asp-for="article.NewsType" id="cars">
+                <option value="SPORT">SPORT</option>
+                <option value="REGIONAL-NEWS">REGIONAL-NEWS</option>
+                <option value="POLITICS">POLITICS</option>
+                <option value="INTERNATIONAL-NEWS">INTERNATIONAL-NEWS</option>
+                <option value="WORLD">WORLD</option>
+                <option value="BUSINESS">BUSINESS</option>
+            </select>
+            <hr>
+            <label asp-for="article.Author"><b>Author:</b></label>
+            <span asp-validation-for="article.Author"></span>
+            <input asp-for="article.Author" type="text" placeholder="Enter Developer">
+            <hr>
+            <label asp-for="article.Date"><b>Date:</b></label>
+            <span asp-validation-for="article.Date"></span>
+            <input type="date" asp-for="article.Date"  placeholder="Enter Developer">
+            <hr>
+            @*<label asp-for="article.Comment"><b>Developer:</b></label>
+        <span asp-validation-for=".Comment"></span>
+        <input asp-for="GameCLass.Comment" type="text" placeholder="Enter Developer">*@
+            <hr>
+
+            <button type="submit" class="add_game_btn">Add</button>
+        </div>
+
+    </form>
+

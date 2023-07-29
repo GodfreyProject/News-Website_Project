@@ -1,0 +1,17 @@
+﻿@page  "{ID}:int"
+@model NewsWebsite.Pages.RemoveReviewsModel
+@{
+    Layout = "Customer_Layout";
+    ViewData["Title"] = "RemoveReviews";
+}
+
+
+<h1>Delete Comments on  Article</h1>
+<h1> @ViewData["Message"]</h1>
+<h4>Are You Sure You want to Delete This Reviews or Coments on Article with Specified ID!!<b>@Html.DisplayFor(model => model.review.ReviewID)</b></h4>
+
+<form method="post">
+    <input type="submit" value="RemoveReviews" />
+    <a asp-page="ViewComments">BACK To List</a>
+</form>
+

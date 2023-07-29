@@ -1,0 +1,67 @@
+﻿@page
+@model NewsWebsite.Pages.PremiunModel
+
+
+@{
+    Layout = "Customer_Layout";
+    ViewData["Title"] = "Premiun";
+}
+<form method="post" enctype="multipart/form-data">
+    <div class="add_game_form">
+        <h1>Welcome to Premium-Subscription</h1>
+        <hr>
+        <div class="main_content">
+            @*<p class="TextBox">*@
+            <p>@ViewData["Msg"]</p>
+            <label asp-for="customer.ID"><b>PersonID:</b></label>
+            <span asp-validation-for="customer.ID"></span>
+            <input type="text" asp-for="customer.ID" placeholder="Enter Name">
+
+            <label asp-for="customer.FirstName"><b>FirstName:</b></label>
+            <span asp-validation-for="customer.FirstName"></span><br>
+            <input type="text" asp-for="customer.FirstName" placeholder="Enter Username"><br><br>
+
+            <label asp-for="customer.LastName"><b>Customer-LastName:</b></label>
+            <span asp-validation-for="customer.LastName"></span>
+            <input readonly asp-for="customer.LastName" type="text" placeholder="Enter NewsId">
+
+            <label asp-for="customer.Email"><b>Customer-Email:</b></label>
+            <span asp-validation-for="customer.Email"></span>
+            <input readonly asp-for="customer.Email" type="text" placeholder="Enter Payment">
+
+
+
+            <label asp-for="GetSub.Payment"><b>Customer-Payment:</b></label>
+            <span asp-validation-for="GetSub.Payment"></span>
+            <input readonly asp-for="GetSub.Payment"  type="text" placeholder="Default-Payment(€15)", style="color:darkred;">
+
+            <hr>
+            <label asp-for="GetSub.Month"><b>Per-Monthly:</b></label>
+            <span asp-validation-for="GetSub.Month"></span>
+            @*<input asp-for="article.NewsType" type="text" placeholder="Enter Developer">*@
+            <select typeof="text" asp-for="GetSub.Month" id="cars">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+            </select>
+            <hr>
+            <label asp-for="GetSub.Status"><b>Status-Payment:</b></label>
+            <span asp-validation-for="GetSub.Status"></span>
+            <input asp-for="GetSub.Status" type="checkbox" placeholder=" Default(€15)">
+            @*<label asp-for="GetSub.Payment"><b>Message:</b></label>
+                <span asp-validation-for="GetSub.Payment"></span><br>
+                <textarea asp-for="GetSub.Payment" placeholder="Write a description" rows="10" cols="100"></textarea><br>*@
+            <hr>
+
+            <button type="submit" class="add_game_btn">Subscribe</button>
+
+
+        </div>
+    </div>
+</form>

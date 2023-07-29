@@ -1,0 +1,59 @@
+﻿@page
+@model NewsWebsite.Pages.ViewCommentsModel
+@{
+    Layout = "Customer_Layout";
+    ViewData["Title"] = "ViewComments";
+}
+
+    <table id="customers">
+
+    <tr>
+        <th>REVIEWID</th>
+        <th>PERSONID</th>
+        <th>USERNAME</th>
+        <th>NEWSID</th>
+        <th>NEWSTYPE</th>
+        <th>MESSAGE</th>
+        <th>DATE</th>
+        <th>ReviewDetails</th>
+        <th>EDIT-REVIEWS</th>
+        <th>DELETE-REVIEWS</th>
+       
+    </tr>
+
+
+
+    @foreach (News_ClassLibrary.Logic.Classes.Review r in Model.reviews)
+    {
+
+        if (r.PersonID == Model.customer.ID)
+        {
+      <tr>
+    <td>@r.ReviewID</td>
+    <td>@r.PersonID</td>
+    <td>@r.Username</td>
+
+    <td>@r.NewsID</td>
+    <td>@r.NewsType</td>
+    <td>@r.Message</td>
+    <td>@r.Date</td>
+
+   
+    <td>
+        <button><a asp-page="ReviewDetails" asp-route-ID="@r.ReviewID">ReviewDetails</a></button>
+    </td>
+    <td>
+        <button><a asp-page="UpdateReviews" asp-route-ID="@r.ReviewID">UpdateReviews</a></button>
+    </td>
+    <td>
+        <button><a asp-page="RemoveReviews" asp-route-ID="@r.ReviewID">RemoveReviews</a></button>
+    </td>
+</tr>
+
+        }
+    }
+</table>
+
+
+
+

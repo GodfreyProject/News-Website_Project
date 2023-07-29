@@ -1,0 +1,100 @@
+﻿@page "{ID}:int"
+@model NewsWebsite.Pages.UpdateReviewsModel
+
+@{
+    Layout = "Customer_Layout";
+    ViewData["Title"] = "UpdateReviews";
+}
+
+<form method="post" enctype="multipart/form-data">
+    <div class="add_game_form">
+        <h1>Add Content</h1>
+
+        <h1 class="alert-danger">@ViewData["Message"]</h1>
+
+        @*<label asp-for="views.ReviewID"><b>ReviewID:</b></label>
+        <span asp-validation-for="views.ReviewID"></span><br>
+        <input type="text" class=".new_releases_img" asp-for="views.ReviewID" placeholder="ReviewID"><br><br>
+        <label asp-for="views.PersonID"><b>PersonID:</b></label>
+        <span asp-validation-for="views.PersonID"></span>
+        <input readonly asp-for="views.PersonID" type="text" placeholder="Enter PersonID">
+        <hr>
+        <label asp-for="views.Username"><b>Username:</b></label>
+        <span asp-validation-for="views.Username"></span>
+        <input readonly asp-for="views.Username" type="text" placeholder="Enter Username">
+        <hr>*@
+        <label asp-for="DisplayRecords.NewsID"><b>NewsID:</b></label>
+        <span asp-validation-for="DisplayRecords.NewsID"></span>
+        <input readonly asp-for="DisplayRecords.NewsID" type="text" placeholder="Enter Developer">
+        <hr>
+        <label asp-for="DisplayRecords.NewsType"><b>NewsType:</b></label>
+        <span asp-validation-for="DisplayRecords.NewsType"></span>
+        <input asp-for="DisplayRecords.NewsType" type="text" placeholder="Enter Developer">
+        <hr>
+        @*<label asp-for="DisplayRecords.Message"><b>SUbject:</b></label>
+        <span asp-validation-for="DisplayRecords.Message"></span>
+        <input asp-for="DisplayRecords.Message" type="text" placeholder="Enter Developer">*@
+
+        <hr>
+        <label asp-for="DisplayRecords.Date"><b>Message:</b></label>
+        <span asp-validation-for="DisplayRecords.Message"></span><br>
+        <textarea asp-for="DisplayRecords.Message" placeholder="Write a Message" rows="10" cols="100"></textarea><br>
+
+        <hr>
+        <label asp-for="DisplayRecords.Date"><b>Date:</b></label>
+        <span asp-validation-for="DisplayRecords.Date"></span>
+        <input asp-for="DisplayRecords.Date" type="text" placeholder="Enter Developer">
+        <hr>
+        @*<h1>Update News Contents Details</h1>
+
+        <hr />*@
+        @*<form method="post">*@
+        <!--<table id="customers">
+            <tr>
+                <td>Comment ID: @Html.DisplayFor(Model => Model.DisplayRecords.ReviewID)</td>
+            </tr>
+            <tr>
+                <td>Customer ID: @Html.DisplayFor(Model => Model.DisplayRecords.PersonID)</td>
+            </tr>
+            <tr>
+                <td>Customer Username: @Html.DisplayFor(Model => Model.DisplayRecords.Username)</td>
+            </tr>
+            <tr>
+                <td>
+                    Article NewsID:@Html.DisplayFor(Model => Model.DisplayRecords.NewsID)</td>
+
+            </tr>
+
+        <tr>
+
+        <td> Article NewsType:<input type="text" asp-for="DisplayRecords.NewsType" /> </td>
+
+        </tr>
+
+    <tr>
+
+        <td> Article Message: <textarea asp-for="DisplayRecords. Message" placeholder="Write a description" rows="10" cols="100"></textarea></td>
+
+    </tr>
+
+    <tr>
+
+    <td> Article Date: <input type="text" asp-for="DisplayRecords. Date" /> </td>
+
+    </tr>
+
+    </table>-->
+        @*<input type="submit" value="Edit" />
+            <a asp-page="Admin">Back To List</a>
+        </form>*@
+        @*<label asp-for="article.Comment"><b>Developer:</b></label>
+        <span asp-validation-for=".Comment"></span>
+        <input asp-for="GameCLass.Comment" type="text" placeholder="Enter Developer">*@
+        <hr>
+
+        <button type="submit" value="UpdateReviews" class="add_game_btn">Update</button>
+        <a asp-page="ViewComments">Back To List</a>
+
+    </div>
+
+</form>

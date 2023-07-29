@@ -1,0 +1,55 @@
+﻿@page
+@model NewsWebsite.Pages.SubscriptionDetailsModel
+@{
+    Layout = "Customer_Layout";
+    ViewData["Title"] = "SubscriptionDetails";
+}
+
+<table id="customers">
+
+    <tr>
+        <th>SUBID</th>
+        <th>FIRSTNAME</th>
+        <th>LASTNAME</th>
+        <th>EMAIL</th>
+        <th>PAYMENT</th>
+        <th>MONTH</th>
+        <th>PAYED-STATUS</th>
+        <th>UNSUBSCRIBED</th>
+        @*<th>EDIT-REVIEWS</th>
+        <th>DELETE-REVIEWS</th>*@
+
+    </tr>
+
+
+
+    @foreach (News_ClassLibrary.Business.Logic.Model.SubScription r in Model.GetScriptions)
+    {
+
+        if (r.FirstName == Model.customer.FirstName)
+        {
+            <tr>
+                <td>@r.SubID</td>
+                <td>@r.FirstName</td>
+                <td>@r.LastName</td>
+
+                <td>@r.Email</td>
+                <td>@r.Payment</td>
+                <td>@r.Month</td>
+                <td>@r.Status</td>
+
+
+                <td>
+                    <button><a asp-page="Unsubscribe" asp-route-ID="@r.SubID">Unsubscribe</a></button>
+                </td>
+                @*<td>
+                    <button><a asp-page="UpdateReviews" asp-route-ID="@r.SubID">UpdateReviews</a></button>
+                </td>
+                <td>
+                    <button><a asp-page="RemoveReviews" asp-route-ID="@r.SubID">RemoveReviews</a></button>
+                </td>*@
+            </tr>
+
+        }
+    }
+</table>

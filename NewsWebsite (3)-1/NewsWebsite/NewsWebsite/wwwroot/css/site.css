@@ -1,0 +1,1121 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+/*body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+
+.website-header {
+    padding: 20px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .website-header img {
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin: 0 30px;
+    }
+
+    .website-header h1 {
+        margin: auto 0;
+    }
+
+.social-icons {
+    text-align: right;
+    flex-grow: 1;
+}
+
+    .social-icons i {
+        margin: 0 7px;
+        cursor: pointer;
+    }
+
+nav {
+    background-color: black;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+    nav ul {
+        margin: 20px 0 0 0;
+    }
+
+.navbar-nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+    .navbar-nav li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+        .navbar-nav li a:hover {
+            color: #e08b6c;
+        }
+
+.breaking-news-section {
+    padding: 0 30px 0 60px;
+    display: flex;
+}
+
+#btext {
+    width: 200px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #e08b6c;
+    font-weight: 600;
+    margin: auto 0;
+}
+
+.breaking-news {
+    padding: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+    .breaking-news:hover, .social-icons i:hover {
+        color: #e08b6c;
+        cursor: pointer;
+    }
+
+.bntime {
+    display: inline-block;
+    color: rgba(255,255,255,0.5);
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+#popular-news {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 5%;
+}
+
+    #popular-news h2 {
+        margin: 0;
+        padding: 5px;
+        color: #fff;
+    }
+
+#featured h2 {
+    background-color: black;
+}
+
+#latest h2 {
+    background-color: darkred;
+}
+
+#our-picks h2 {
+    background-color: darkblue;
+}
+
+#featured {
+    flex: 2;
+}
+
+#latest, #our-picks {
+    flex: 1;
+}
+
+#popular-news img {
+    width: 100%;
+    filter: brightness(0.7);
+    transition-duration: 500ms;
+}
+
+.carousel, .news-container {
+    position: relative;
+}
+
+.carousel-text {
+    position: absolute;
+    word-wrap: normal;
+    bottom: 5px;
+    z-index: 2;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 0 10px;
+    transition-duration: 500ms;
+}
+
+.news-container .carousel-text {
+    font-size: 18px;
+}
+
+.carousel-date {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    font-weight: 300;
+}
+
+section {
+    cursor: pointer;
+}
+
+.news-container:hover > .carousel-text {
+    bottom: 10px;
+}
+
+.news-container:hover > img {
+    filter: brightness(0.4);
+}
+
+.more-news {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5%;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.news-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 70%;
+    justify-content: space-between;
+}
+
+.world h2 {
+    background-color: #b2175b;
+}
+
+.sport h2 {
+    background-color: #3c1b75;
+}
+
+.world h2, .sport h2 {
+    margin: 10px 0 0 0;
+    padding: 0 10px;
+}
+
+.more-news img {
+    width: 100%;
+    height: 250px;
+}
+
+.world, .sport {
+    flex-basis: 45%;
+}
+
+aside {
+    width: 90%;
+    padding: 10px;
+    flex-basis: 25%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: auto 0;
+}
+
+p {
+    text-align: justify;
+}
+
+.recent-news {
+    display: flex;
+}
+
+    .recent-news img {
+        width: 70px;
+        height: 70px;
+        margin: 10px;
+    }
+
+    .recent-news p {
+        font-size: 14px;
+        font-weight: bold;
+        margin: auto;
+    }
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    justify-content: space-between;
+}
+
+    .social-links section {
+        flex-basis: 30%;
+    }
+
+.social-icons-footer i {
+    font-size: 37px;
+    padding: 5px;
+}
+
+.instagram img {
+    padding: 5px;
+}
+
+.footer-buttons {
+    display: block;
+    border: 1px solid #2196f3;
+    color: #2196f3;
+    font-size: 14px;
+    font-weight: bolder;
+    background-color: white;
+    margin: 20px auto;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+    .footer-buttons:hover {
+        color: #fff;
+        border: 1px solid #fff;
+        background-color: #2196f3;
+    }
+
+.copyright {
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .breaking-news-section {
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    #featured {
+        flex: auto;
+    }
+
+    .news-section, aside, .news-section article, .social-links section {
+        flex-basis: 100%;
+    }
+
+    aside {
+        border-width: 0;
+    }
+
+    .social-links section {
+        margin-top: 20px;
+    }
+
+    .website-header img {
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+    }
+
+    .website-header h1 {
+        font-size: 15px;
+    }
+
+    .social-icons {
+        flex-basis: 100%;
+    }
+
+    .navbar-collapse {
+        background-color: black;
+        z-index: 16;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url(images/menu.jpg);
+        z-index: 16;
+    }
+
+   
+}*/
+/*.*//*menu {
+    position: relative;
+}
+
+.ani-menu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-3em);
+    z-index: -1;
+    transition: all 0.3s ease 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.menu:focus .ani-menu,
+.menu:focus-within .ani-menu,
+.menu:hover .ani-menu {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0);
+    transition-delay: 0s, 0s, 0.3s;
+}
+
+nav a {
+    color: #fff;
+    display: block;
+    padding: 15px 60px;
+    text-decoration: none;
+    font-family: big john;
+}
+
+.ani-menu a {
+    width: 70%;
+    padding: 15px 30px;
+    font-family: roboto;
+}
+
+    .ani-menu a:hover {
+        background: #262626;
+    }
+
+nav a:hover {
+    background: crimson;
+}
+
+nav ul, nav ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav > ul {
+    background: #262626;
+    text-align: center;
+    width: 2170px;
+}
+
+    nav > ul > li {
+        display: inline-block;
+        border-left: 1px solid #fff;
+    }
+
+        nav > ul > li:first-child {
+            border-left: none;
+        }
+
+.ani-menu {
+    background: crimson;*/
+/*}*/
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+ Provide sufficient contrast against white background 
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+ /*Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+--------------------------------------------------*/ 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin-bottom by footer height;*/
+  margin-bottom: 60px;
+  background-color:mediumpurple;
+ /* background-color:mediumpurple;*/
+  /*background-color:Black;*/
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+Thebody {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "header header header"
+        "content content content"
+        "footer footer footer";
+    grid-column-gap: 10px;
+}
+
+Header
+
+.header {
+    grid-area: header;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+    font-size: 25px;
+    line-height: 75px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 5px;
+    border-bottom-style: solid;
+    margin-bottom: -3px;
+    background-color: lightskyblue;
+    top: 0px;
+}
+
+nav {
+    background-color: lightskyblue;
+    display: flex;
+    top: 0;
+}
+
+.a {
+    background-color: lightskyblue;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0px 1px;
+}
+
+    .a:hover {
+        color: lightskyblue;
+        background-color: white;
+        padding: 10px 20px 10px 20px;
+    }
+
+
+
+.LoginButton {
+    background-color: lightskyblue;
+    box-shadow: 0px 1px;
+    margin-right: 5px;
+    margin-left: auto;
+}
+
+    .LoginButton:hover {
+        color: lightskyblue;
+        background-color: white;
+        padding: 10px 20px 10px 20px;
+    }
+
+Footer
+.footer {
+    grid-area: footer;
+    bottom: 0px;
+    width: 100%;
+    padding: 20px 12px 12px 12px;
+    border-top-style: solid;
+    margin-bottom: -3px;
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightskyblue;
+    bottom: 0px;
+}
+
+Main Body
+.main_content {
+    width: 100%;
+    height: 100%;
+    grid-column-gap: 10px;
+    grid-area: content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+Label
+.Title {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+.Name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    padding: 12px;
+}
+
+TextBox
+.TextBox {
+    width: 600px;
+    height: 50px;
+    font-size: 28px;
+}
+
+.TextBoxLX {
+    width: 600px;
+    height: 100px;
+    font-size: 28px;
+}
+
+Button
+.button {
+    padding: 10px;
+    width: 30%;
+    height: 50px;
+    margin: 10px;
+}
+
+Login page
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    padding: 12px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width:1400px;
+}
+Table
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.img{
+    height: 150px;
+    width: 250px;
+}
+
+.new_release_img{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    background-color: cadetblue;
+}
+
+.sign_up_btn, .login_btn, .add_game_btn{
+
+    background-color:#04aa6D;
+    color: white;
+    padding:14px 20px;
+    margin: 8px 0;
+    border:none;
+    cursor:pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.sign_up_btn, .login_btn, .add_game_form {
+    border-style: solid;
+    border-color: gray;
+    padding: 16px;
+  
+}
+
+.content_img{
+    float:left;
+    padding:5px;
+    width:100%;
+    height:80%;
+}
+
+.img{
+    width: 350px;
+    height: 150px;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    #customers td, #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #customers tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #customers tr:hover {
+        background-color: #ddd;
+    }
+
+
+.sign_up_form, .login_form, .add_game_form {
+    border-style: solid;
+    border-color: gray;
+    padding: 16px;
+}
+
+.sign_up_btn, .login_btn, .add_game_btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+    .sign_up_btn:hover {
+        opacity: 1;
+    }
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    font-family: Arial;
+}
+
+    .custom-select select {
+        display: none; /*hide original SELECT element:*/
+    }
+
+.select-selected {
+    background-color: DodgerBlue;
+}
+
+   /* style the arrow inside the select element:*/
+    .select-selected:after {
+        position: absolute;
+        content: "";
+        top: 14px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-color: #fff transparent transparent transparent;
+    }
+
+html {
+}
+
+/*Grid*/
+
+Thebody {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "header header header"
+        "content content content"
+        "footer footer footer";
+    grid-column-gap: 10px;
+}
+
+/*Header*/
+
+.header {
+    grid-area: header;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+    font-size: 25px;
+    line-height: 75px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 5px;
+    border-bottom-style: solid;
+    margin-bottom: -3px;
+    background-color: lightskyblue;
+    top: 0px;
+}
+
+nav {
+    background-color: lightskyblue;
+    display: flex;
+    top: 0;
+}
+
+.a {
+    background-color: lightskyblue;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0px 1px;
+}
+
+    .a:hover {
+        color: lightskyblue;
+        background-color: white;
+        padding: 10px 20px 10px 20px;
+    }
+
+
+
+.LoginButton {
+    background-color: lightskyblue;
+    box-shadow: 0px 1px;
+    margin-right: 5px;
+    margin-left: auto;
+}
+
+    .LoginButton:hover {
+        color: lightskyblue;
+        background-color: white;
+        padding: 10px 20px 10px 20px;
+    }
+
+/*Footer*/
+.footer {
+    grid-area: footer;
+    bottom: 0px;
+    width: 100%;
+    padding: 20px 12px 12px 12px;
+    border-top-style: solid;
+    margin-bottom: -3px;
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightskyblue;
+    bottom: 0px;
+}
+
+/*Main Body*/
+.main_content {
+    width: 100%;
+    height: 100%;
+    grid-column-gap: 10px;
+    grid-area: content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+/*Label*/
+.Title {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+.Name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    padding: 12px;
+}
+
+/*TextBox*/
+.TextBox {
+    width: 600px;
+    height: 50px;
+    font-size: 28px;
+}
+
+.TextBoxLX {
+    width: 600px;
+    height: 100px;
+    font-size: 28px;
+}
+
+/*Button*/
+.button {
+    padding: 10px;
+    width: 30%;
+    height: 50px;
+    margin: 10px;
+}
+
+/*Login page*/
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    padding: 12px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+/*Table*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* grid for update reservations*/
+
+
+
+  /*  point the arrow upwards when the select box is open (active):
+    .select-selected.select-arrow-active:after {
+        border-color: transparent transparent #fff transparent;
+        top: 7px;
+    }
+
+style the items (options), including the selected item:
+.select-items div, .select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+style items (options):
+.select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+hide the items when the select box is closed:
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+h1.box {
+    background-color: mediumpurple;
+    width: 1750px;
+    border: 15px solid mediumpurple;
+    padding: 50px;
+    margin: 20px;
+}
+body {
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 350px;
+    height: 40px;
+}
+
+.option {
+    padding: 0 30px 0 10px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    background: #E5E5E5;
+    border-top: #222 solid 1px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    pointer-events: none;
+    order: 2;
+    z-index: 1;
+    transition: background .4s ease-in-out;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+    .option:hover {
+        background: #FF595C;
+    }
+
+.select:focus .option {
+    position: relative;
+    pointer-events: all;
+}
+
+input {
+    opacity: 0;
+    position: absolute;
+    left: -99999px;
+}
+
+    input:checked + label {
+        order: 1;
+        z-index: 2;
+        background: #FF595C;
+        border-top: none;
+        position: relative;
+        color: white;
+    }
+
+        input:checked + label:after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid white;
+            position: absolute;
+            right: 10px;
+            top: calc(50% - 2.5px);
+            pointer-events: none;
+            z-index: 3;
+        }
+
+        input:checked + label:before {
+            position: absolute;
+            right: 0;
+            height: 40px;
+            width: 40px;
+            content: '';
+            background: #050505;
+        }
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+}
+
+    .custom-select select {
+        display: none; hide original SELECT element:
+    }
+
+.select-selected {
+    background-color: DodgerBlue;
+}
+
+    style the arrow inside the select element:
+    .select-selected:after {
+        position: absolute;
+        content: "";
+        top: 14px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-color: #fff transparent transparent transparent;
+    }
+
+    point the arrow upwards when the select box is open (active):
+    .select-selected.select-arrow-active:after {
+        border-color: transparent transparent #fff transparent;
+        top: 7px;
+    }
+
+style the items (options), including the selected item:
+.select-items div, .select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+style items (options):
+.select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+hide the items when the select box is closed:
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+*/
